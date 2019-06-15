@@ -101,9 +101,12 @@ input, select, textarea {
 	body {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3464,8 +3467,10 @@ input, select, textarea {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto, cover;
-				background-position: center, center;
+				background-size: auto,
+ cover;
+				background-position: center,
+ center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3574,8 +3579,10 @@ input, select, textarea {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
@@ -3585,8 +3592,10 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
-			background-size: auto, cover;
-			background-position: center, 0% 0%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 0%;
 			margin-bottom: -4.75em;
 		}
 
@@ -3600,7 +3609,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
-			background-size: auto, 125%;
+			background-size: auto,
+ 125%;
 			margin-bottom: -2.5em;
 		}
 
@@ -3741,7 +3751,7 @@ input, select, textarea {
 			}
 
 		.wrapper.style6 {
-			background-color: #555867;
+			background-color: pink;
 		}
 
 			.wrapper.style6:before, .wrapper.style6:after {
@@ -3749,15 +3759,15 @@ input, select, textarea {
 			}
 
 			.wrapper.style6:before {
-				box-shadow: inset 0 -1px 0 0 #555867, 0 1px 0 0 #555867;
+				box-shadow: inset 0 -1px 0 0 pink, 0 1px 0 0 pink;
 			}
 
 			.wrapper.style6:after {
-				box-shadow: inset 0 -1px 0 0 #555867, 0 1px 0 0 #555867;
+				box-shadow: inset 0 -1px 0 0 pink, 0 1px 0 0 pink;
 			}
 
 		.wrapper.spotlight {
-			background-color: #4c5c96;
+			background-color: red;
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
@@ -3765,29 +3775,100 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight:before {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0 red, 0 1px 0 0 red;
 			}
 
 			.wrapper.spotlight:after {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0 red, 0 1px 0 0  red;
 			}
 
 			.wrapper.spotlight .inner {
-				display: -moz-flex;
+				/* display: -moz-flex;
 				display: -webkit-flex;
-				display: -ms-flex;
+				display: -ms-flex; */
 				display: flex;
-				-moz-align-items: center;
+				/* -moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
 				-moz-flex-direction: row;
 				-webkit-flex-direction: row;
-				-ms-flex-direction: row;
-				flex-direction: row;
+				-ms-flex-direction: row;*/
+				flex-direction: row; 
 			}
 
-			.wrapper.spotlight .image {
+			.hexagon{
+				margin-left: 20px;
+				background: red;
+				background-position: center;
+				transform: rotate(120deg)			;
+				-webkit-transform: rotate(120deg)			;
+				-moz-transform: rotate(120deg)			;
+				-ms-transform: rotate(120deg)			;
+				-o-transform: rotate(120deg)			;
+				overflow: hidden;
+				visibility: hidden;
+}
+
+			.hexagon-inner {
+				width: 100%;
+				height: 100%;
+				background: blue;
+				background-position: center;
+				background-size: 100% 100%;
+				transform: rotate(-60deg)			;
+				-webkit-transform: rotate(-60deg)			;
+				-moz-transform: rotate(-60deg)			;
+				-ms-transform: rotate(-60deg)			;
+				-o-transform: rotate(-60deg)			;
+				overflow: hidden;
+}
+
+			.hexagon-inner .image{
+				width: 100%;
+				height: 100%;
+				background-position: center;
+				background: green;
+				transform: rotate(-60deg)			;
+				-webkit-transform: rotate(-60deg)			;
+				-moz-transform: rotate(-60deg)			;
+				-ms-transform: rotate(-60deg)			;
+				-o-transform: rotate(-60deg)			;
+				overflow: hidden;
+				visibility: visible;
+			}
+
+			.hexagon-inner .image img{
+				width: 100%;
+				height: 100%;
+				background-position: center;
+				
+			}
+
+			/* .inner:after{
+				position: absolute;
+				content:'';
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: -1;
+				height: 100%;
+				width: 100%;
+				margin: 0 auto;
+				filter:blur(40px)			;
+				-webkit-filter:blur(40px)			;
+				transform: scale(1.3);
+				-webkit-transform: scale(1.3);
+				-moz-transform: scale(1.3);
+				-ms-transform: scale(1.3);
+				-o-transform: scale(1.3);
+				background: linear-gradient (90deg, #0fffc1 #7e0fff);
+				background-size: 200% 200%;
+				animation: animateglow 10s ease infinite;
+				-webkit-animation: animateglow 10s ease infinite;
+} */
+
+			/* .wrapper.spotlight .image {
 				border-radius: 100%;
 				margin: 0 3em 2em 0;
 				width: 22em;
@@ -3798,7 +3879,7 @@ input, select, textarea {
 				.wrapper.spotlight .image img {
 					border-radius: 100%;
 					width: 100%;
-				}
+				} */
 
 			.wrapper.spotlight .content {
 				width: 100%;
@@ -3813,9 +3894,9 @@ input, select, textarea {
 				text-align: right;
 			}
 
-			.wrapper.spotlight:nth-child(2n - 1) .image {
+			/* .wrapper.spotlight:nth-child(2n - 1) .image {
 				margin: 0 0 2em 3em;
-			}
+			} */
 
 			.wrapper.spotlight.style2 {
 				background-color: #45558d;
@@ -4062,8 +4143,10 @@ input, select, textarea {
 		#footer {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, center;
+			background-size: auto,
+ cover;
+			background-position: center,
+ center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
